@@ -26,19 +26,11 @@ document.getElementById('start').addEventListener('click', () => {
     setTimeout(function(){
         pianoKeys[key].classList.remove('active');
     }, 700);
-    //const spanWords = words.map(function(word) {return `<span>${key} </span>`});
 });
 
   document.addEventListener('keydown', (e) => {
     keyPressed.push(e.code);
     console.log('keyPressed: '+keyPressed);
-    // for (let i=0; i < keyPressed.length; i++){
-    //     if (keyPressed[i][3] !== keys[i]){
-    //         gameOver = true;
-    //         endGame();  
-    //     }
-    // }
-    console.log(index);
     if (keyPressed[index][3]!== keys[index]){
         gameOver = true;
         endGame();
@@ -50,18 +42,6 @@ document.getElementById('start').addEventListener('click', () => {
     }
     
  });
-
-//  function moveToNextLevel() {
-//      for (let i=0; i < level; i++){
-//          if (keyPressed[i][3] !== keys[i]){
-//              console.log('You fail');
-//              gameOver = true;
-//              endGame();      
-//          }
-//     } if (gameOver === false) {
-//         levels() 
-//     }
-//  }
 
   function levels() {
       level++;

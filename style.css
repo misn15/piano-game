@@ -46,3 +46,21 @@
 .endGame {
     background-color: red;
 }
+
+h1 {
+    text-align: center;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+}
+
+#level {
+    font-size: 1.5em;
+}
+
+#start {
+    font-size: 1.5em;
+}
