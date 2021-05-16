@@ -59,5 +59,7 @@ document.getElementById('start').addEventListener('click', () => {
 
   function endGame() {
     document.getElementById('screen').style.backgroundColor = 'red';
+    levelElement.style.color = "white";
+    levelElement.innerText= "Game Over";
   }
 
